@@ -1,30 +1,4 @@
-#!/usr/bin/env node
-
 'use strict';
-
-const inquirer = require('inquirer');
-const fs = require('fs');
-
-const testMD = fs.readFileSync('./test.md', 'UTF8');
-
-const cleanArgs = args => {
-  /**
-  * Given a set of command-line arguments
-  * Discard the first two args, which are
-  * 1. node
-  * 2. The running script
-  * Return an array of the remaining args
-  * @param args {array} always process.argv
-  * @returns {Array} An array of arguments, with - and -- removed
-  * @private
-  **/
-
-  args = args.slice(2);
-  return args.map(arg => {
-    console.log(arg)
-    return arg.replace(/-*/g,'');
-  });
-}
 
 const MDtoArr = openFile => {
   /**
@@ -80,7 +54,4 @@ const ArrToMD = questionArr => {
   }, '');
 }
 
-
-// console.log('cleanargs', cleanArgs(process.argv));
-
-console.log(ArrToMD(MDtoArr(testMD)));
+module.exports = { MDtoArr, ArrToMD };
