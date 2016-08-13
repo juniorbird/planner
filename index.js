@@ -21,11 +21,10 @@ const cleanArgs = args => {
 }
 
 const MDtoArr = openFile => {
-  let re = /\n-*\n/g;
-  let arr = re[Symbol.split](openFile);
+  let arr = /\n-*\n/g[Symbol.split](openFile);
   let question;
   let response;
-  let red = arr.reduce((prev, curr, idx) => {
+  return arr.reduce((prev, curr, idx) => {
     if (idx > 0) {
       if ((idx % 2) === 1) {
         question = curr;
@@ -37,7 +36,6 @@ const MDtoArr = openFile => {
     }
     return prev;
   }, [])
-  return red;
 }
 
 
