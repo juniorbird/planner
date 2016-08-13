@@ -32,13 +32,23 @@ const MDtoArr = openFile => {
       } else {
         response = curr;
       }
-      if (question && response) prev.push({ question: question, response: response});
+      if (question && response) prev.push({ question: question, response: response });
     }
     return prev;
   }, [])
 }
 
+const ArrToMD = questionArr => {
+  let question;
+  let response;
+  return questionArr.reduce((prev, curr) => {
+    question = curr.question + '\n' + '-'.repeat(curr.question.length);;
+    response = curr.response;
+    return prev + '\n\n' + question + '\n' + response;
+  }, '');
+}
+
 
 // console.log('cleanargs', cleanArgs(process.argv));
 
-console.log(MDtoArr(testMD));
+console.log(ArrToMD(MDtoArr(testMD)));
