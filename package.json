@@ -6,6 +6,9 @@
   "scripts": {
     "test": "test"
   },
+  "bin": {
+    "planner": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juniorbird/planner.git"
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/juniorbird/planner/issues"
   },
-  "homepage": "https://github.com/juniorbird/planner#readme"
+  "homepage": "https://github.com/juniorbird/planner#readme",
+  "dependencies": {
+    "inquirer": "^1.1.2"
+  }
 }
