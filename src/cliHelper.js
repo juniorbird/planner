@@ -1,5 +1,7 @@
 'use strict';
 
+const exec = require('child_process').exec;
+
 const helpText = `planner : Launches to a list from which you select your task)
 planner -s --setup : Create your configuration files
 planner -a --start : Start your day
@@ -27,6 +29,20 @@ const cleanArgs = args => {
     console.log(arg)
     return arg.replace(/-*/g,'');
   });
+}
+
+const gitHelper = (command, dir, date, repo) => {
+  switch(command) {
+    case 'checkout':
+      exec(`cd ${dir} && git checkout ${repo}`);
+      break;
+    case 'pull':
+      exec(`cd ${dir} && git pull`);
+      break;
+    case 'commit':
+      exec(`cd ${dir} && git add . && git commit -m '${Date}'`);
+      break;
+  }
 }
 
 module.exports = { helpText, cleanArgs };
