@@ -38,3 +38,6 @@ jspm_packages
 
 # Testing files
 test.md
+
+# built stuff
+build/

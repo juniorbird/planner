@@ -1,0 +1,154 @@
+{
+	"agendas": {
+		"plan": [
+			"a826f4958495c4ad",
+			"be35a898dc6ab3f1",
+			"d126c700edc65cf1",
+			"6742cff2c32b6bf1",
+			"d46dd1a3e6241abf",
+			"786b84aa450de01b",
+			"f43e5c9c95c470ed",
+			"164b0fc87ba526b4",
+			"cc6dd69e4fd2434d"
+		],
+		"review": [
+			"6e37396e094a5fb0",
+			"ac839d0997e830ee",
+			"08c7f7ef9415dfe3",
+			"14a0cf111b0a0b83",
+			"4c60666dbd5830e1",
+			"b027acc389ae6a32",
+			"ff875283a034ed13"
+		]
+	},
+	"questions": [
+		{
+			"id" : "a826f4958495c4ad",
+			"question": "What's today's agenda?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "be35a898dc6ab3f1",
+			"question": "Is today a coding or management day?",
+			"prompt_response": true,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "d126c700edc65cf1",
+			"question": "What are today's objectives & tasks?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": 3,
+			"load_response": false
+		},
+		{
+			"id" : "6742cff2c32b6bf1",
+			"question": "What code will I review today?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "d46dd1a3e6241abf",
+			"question": "What specific mentoring task will I do today?",
+			"prompt_response": true,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "786b84aa450de01b",
+			"question": "What is happening tomorrow? Do I need to prep for it?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "f43e5c9c95c470ed",
+			"question": "What's 1 thing I can do to make myself fulfilled today?",
+			"prompt_response": true,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "164b0fc87ba526b4",
+			"question": "Now put time on your calendar for all those things, with timebox specificity!",
+			"prompt_response": false,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "cc6dd69e4fd2434d",
+			"question": "Get some snacks for your desk so that you don't get fat.",
+			"prompt_response": false,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "6e37396e094a5fb0",
+			"question": "What were today's priorities?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": "d126c700edc65cf1"
+		},
+		{
+			"id" : "ac839d0997e830ee",
+			"question": "What tasks did I complete today/how did they relate to the priorities?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "08c7f7ef9415dfe3",
+			"question": "What did I do well today? What am I proud of accomplishing today?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "14a0cf111b0a0b83",
+			"question": "What do I need help with",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "4c60666dbd5830e1",
+			"question": "One thing I learned today",
+			"prompt_response": true,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "b027acc389ae6a32",
+			"question": "Did I do well on my main focus today? What will I do about that tomorrow?",
+			"prompt_response": true,
+			"multi_response": false,
+			"multi_max": false,
+			"load_response": false
+		},
+		{
+			"id" : "ff875283a034ed13",
+			"question": "What should I do tomorrow?",
+			"prompt_response": true,
+			"multi_response": true,
+			"multi_max": 3,
+			"load_response": false
+		}
+	]
+}
