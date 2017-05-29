@@ -17,13 +17,14 @@ planner -n -next              : Display the #1 incomplete item from your to-do l
 planner -c {n} --complete {n} : Complete the nth item on your to-do list
 planner -c --complete         : When passed without a number, query for a new task to have completed
 **/
+import os from 'os';
 
 import { argv } from 'yargs';
 
 import { loadAgenda } from './questionsHelper';
 
 const whichAgenda = argv._;
-const PREFS = './preferences.json';
+const PREFS = `${os.homedir()}/planner/preferences.json`;
 
 let theAgenda = loadAgenda(PREFS, whichAgenda);
 
